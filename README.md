@@ -1,0 +1,21 @@
+#### git命令
+ - git init 初始化版本库
+   - 结构：本地（工作区-（暂存区 分支（最新版本<——HEAD））） - 远程
+ - 本地——>工作区：git add filename/dirname/.
+   - 删除：文件删除，暂存区：git rm filename
+   - 删除所有：文件删除，暂存区：git add .
+   - 撤销工作区的修改：git checkout -- filename
+ - 工作区——>分支：git commit -m 'message'
+   - 撤销暂存区的修改：git reset HEAD filename
+   - 分支版本穿梭：git log查看
+   - git reset --hard commitid/HEAD~
+   - git reflog 额。。再次穿梭。。
+ - 本地——>远程
+   - 创建远程仓库
+   - 链接：git remote add origin [ssh addr]
+   - push:git push -u origin master
+   - 本地版本回退：git pull
+ - 查看状态
+   - git status
+   - git diff filename
+#### 分支
